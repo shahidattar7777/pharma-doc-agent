@@ -4,9 +4,9 @@ A **Regulatory Document Intelligence Agent** that uses **LangGraph**, **RAG (Ret
 
 Built for pharmaceutical scientists, regulatory affairs professionals, and medical affairs teams to extract structured insights from FDA approval packages.
 
-**Python**
-**LangGraph**
-**Claude**
+# **Python**
+# **LangGraph**
+# **Claude**
 
 ## What It Does
 
