@@ -89,3 +89,23 @@ PDF Extraction: PyMuPDF
 UI: Streamlit
 Prompting Techniques: Chain-of-Thought, Few-Shot
 
+## Future Improvements
+
+- **Cross-encoder re-ranking:** Add a second-stage retrieval step using 
+  `cross-encoder/ms-marco-MiniLM-L-6-v2` to re-rank the initial vector 
+  search candidates before passing context to the LLM. This would improve 
+  retrieval precision by filtering out topically similar but non-answering chunks.
+
+- **Hybrid search (BM25 + vector):** Combine keyword-based retrieval with 
+  semantic search using Reciprocal Rank Fusion to handle domain-specific 
+  acronyms and terminology (e.g., MACE, HbA1c) that embedding models may 
+  underrepresent.
+
+- **Semantic chunking:** Replace character-based splitting with 
+  embedding-similarity-based topic detection or FDA document structure-aware 
+  chunking to produce more coherent retrieval units.
+
+- **Production deployment:** Migrate from ChromaDB to pgvector on AWS RDS, 
+  containerize with Docker, deploy on AWS ECS Fargate, and add authentication 
+  for regulatory compliance.
+
