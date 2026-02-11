@@ -109,3 +109,7 @@ Prompting Techniques: Chain-of-Thought, Few-Shot
   containerize with Docker, deploy on AWS ECS Fargate, and add authentication 
   for regulatory compliance.
 
+
+https://github.com/user-attachments/assets/9b07f333-c512-4ebc-ab7d-8ef42eb3bc44
+
+
